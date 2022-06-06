@@ -1,0 +1,15 @@
+{
+  "name": "vchat-backend-api",
+  "version": "1.0.0",
+  "description": "This is the api which accepts the data when user enters into the chat app and return response depending upon the uses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
