@@ -25,8 +25,8 @@ app.get('/adduser',(req,res)=>{
     let id=req.query.id;
     let name=req.query.name;
     userlist.set(id,name);
-    console.log(req.query);
-    console.log("userlist=",userlist)
+    //console.log(req.query);
+    //console.log("userlist=",userlist)
     
     res.json(Object.fromEntries(userlist));
 });
@@ -36,11 +36,11 @@ app.get('/adduser',(req,res)=>{
 // http://localhost/deleteuser?id=124
 app.get('/deleteuser',(req,res)=>{
     let id=req.query.id;
-    console.log("before deletion",userlist,id);
+    //console.log("before deletion",userlist,id);
     userlist.delete(id);
     // console.log("after deletion",userlist);
     
-    console.log("now the users are ",userlist);
+    //console.log("now the users are ",userlist);
     res.json(Object.fromEntries(userlist));
 });
 
@@ -59,6 +59,6 @@ app.get('/deleteuser',(req,res)=>{
 
 
 server.listen(port,()=>{
-    console.log("connected to the server successfully");
+   // console.log("connected to the server successfully");
 
 })
